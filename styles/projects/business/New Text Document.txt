@@ -1,0 +1,7 @@
+Faraday Future
+
+Faraday Future is a business website for advanced design and extreme technology geared to serve the driver.
+
+React.js Node.js Express
+
+https://www.ff.com/

@@ -1,0 +1,7 @@
+Dunes Academy
+
+Dunes Academy is an education website for children.
+
+https://dunesacademy.com/
+
+React Wordpress PHP

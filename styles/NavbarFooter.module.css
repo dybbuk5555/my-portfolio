@@ -1,0 +1,134 @@
+.logo, .footerlogo{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+  }
+
+  .navbar{
+    z-index: 5000;
+    width: -webkit-fill-available;
+    padding: 0.9rem 5rem 1.3rem 5rem;
+  }
+
+  .navlinks {
+    padding: 0 1.5rem;
+    font-size: 15px;
+  } 
+
+.navlinks a{
+    opacity: 80%;
+    position: relative;
+    text-transform: uppercase;
+  } 
+
+.navlinks a:hover{
+    opacity: 100%;
+}
+
+.navlinks a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.navlinks a:hover:after {
+  width: 100%;
+  transition: 0.25s linear;
+}
+
+.footermain{
+  padding: 2rem;
+  text-align: center;
+}
+
+.footercontent{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+.footertable {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.footertable ul{
+  list-style: none;
+  text-align: left;
+}
+
+.footertable li{
+  font-size: 14px;
+  margin: 0.2rem 0;
+  text-transform: capitalize;
+}
+
+.footertable li:hover{
+  text-decoration: underline;
+}
+
+.listHeading{
+  font-weight: bold;
+  font-size: 16px !important;
+}
+
+.listHeading:hover{
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 550px){
+  .footerlogo{
+    font-size: 25px;
+  }
+  .footermain{
+    text-align: left;
+  }
+  .footertable {
+    display: block;
+    margin: 0 auto 2rem auto;
+    padding: 0 2rem;
+    width: 100%;
+  }
+  .footertable ul{
+    list-style: none;
+  }
+  .listHeading{
+    margin-top: 1.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 950px){
+  .logo{
+    font-size: 20px;
+  }
+  .navlinks {
+    padding: 0.5rem;
+    font-size: 12px;
+  } 
+  .navbar{
+    padding: 0.5rem;
+  }
+  .css-yi1c6h {
+    --slider-track-width: 2rem !important;
+    --slider-track-height: 1rem !important;
+}
+}
+
+@media only screen and (max-width: 380px){
+  .footercontent{
+    font-size: 14px;
+  }
+  .footertable {
+    padding: 0;
+  }
+}
+

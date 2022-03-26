@@ -1,0 +1,414 @@
+.homeheading{
+  height: 90vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25vw;
+}
+
+.homeheading::before{
+  content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    opacity: 0.4;
+}
+
+.heading{
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  margin: 0 1rem;
+}
+
+.subheading{
+  position: relative;
+  font-size: 19px;
+}
+
+.cta1{
+  padding: 0.5rem 2.5rem;
+  margin-top: 2rem;
+  position: relative;
+  border-radius: 50px;
+  transition: 0.2s ease-in-out;
+  font-size: 19px;
+}
+
+.cta1:hover{
+  transform: translateY(-5px);
+}
+
+.cta2{
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.cta2:hover{
+  transform: translateY(-5px);
+}
+
+.projectmain{
+  width: 45%;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  border: 3px dashed;
+}
+
+.projectIcon{
+  height: 60px;
+  width: 60px;
+  padding: 1rem;
+  border-radius:50%;
+  margin-bottom: 1rem;
+  border: 4px solid;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.projectContent{
+  transform: translateY(-2.1rem)
+}
+
+.projectTitle{
+  font-size: 18px;
+}
+
+.projectSubTitle{
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.workheading{
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.homeWorkSection{
+  padding: 2rem;
+}
+
+.homeSkillSection{
+  padding: 4rem 2rem;
+}
+
+.cta3{
+  padding: 0.4rem 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  font-size: 16px;
+}
+
+.cta3:hover{
+  transform: translateY(-5px);
+}
+
+.cta4{
+  padding: 0.4rem 2.5rem;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  font-size: 16px;
+}
+
+.cta4:hover{
+  transform: translateY(-5px);
+}
+
+.skills{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem 0;
+}
+
+.line{
+  width: 2px;
+  height: auto;
+}
+
+.skillList{
+  padding: 1rem 0;
+}
+
+.skillHeading{
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.homeAboutSection{
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 10vw;
+}
+
+.homeAboutSection::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('about.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  opacity: 0.4;
+}
+
+.aboutText{
+  text-align: left;
+  font-size: 18px;
+  width: 44%;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.educationWrapper{
+  padding: 4rem 0;
+  padding-bottom: 2rem;
+}
+
+/* timeline styles */
+.timeline{
+  position:relative;
+  margin:2rem auto;
+  padding:40px 0;
+  width: 60vw;
+  box-sizing:border-box;
+}
+.timeline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:85%;
+  background:#a8a8a8;
+}
+.timeline ul{
+  padding:0;
+  margin:0;
+}
+.timeline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.content{
+  padding-bottom:20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  background:#a8a8a8;
+  border-radius:50%;
+}
+.timeline ul li:nth-child(even):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  background:#a8a8a8;
+  border-radius:50%;
+}
+.timeline ul li p{
+  margin:10px 0 0;
+  padding:0;
+  font-size: 14px;
+}
+.timeline ul li .time h4{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+.timeline ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  width: 150px;
+  text-align: center;
+  padding:8px 16px;
+  border-radius:18px;
+  color: #363537;
+}
+.timeline ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  width: 150px;
+  text-align: center;
+  margin:0;
+  padding:8px 16px;
+  border-radius:18px;
+  color: #363537;
+}
+
+@media only screen and (max-width: 1200px){
+  .timeline{
+    width: 80vw;
+  }
+}
+/* ********************************* */
+
+@media only screen and (max-width: 850px){
+  .projectmain{
+    width: 70%;
+  }
+
+  .homeheading{
+    padding: 0 15vw;
+  }
+  .heading{
+    font-size: 35px;
+  }
+  .subheading{
+    font-size: 17px;
+  }
+  .workheading{
+    font-size: 45px;
+  }
+  .skills{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 2rem 0;
+  }
+  .line{
+    width: 100%;
+    height: 2px;
+    margin: 1rem 0;
+  }
+  .skillList{
+    padding: 1rem 3rem;
+  }
+  .aboutText{
+    text-align: left;
+    width: 70%;
+    position: static;
+  }
+
+  /* timeline */
+  .timeline{
+    width: 90vw;
+    padding-bottom: 0;
+  }
+
+  .timeline:before{
+    left:20px;
+    top: 10px;
+    height:90%;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even)
+  {
+    width:100%;
+    text-align:left;
+    padding-bottom:50px;
+  }
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+  .timeline ul li:nth-child(odd) .time,
+  .timeline ul li:nth-child(even) .time{
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+  /* **************************** */
+}
+
+@media only screen and (max-width: 535px){
+  .homeheading{
+    padding: 0 10vw;
+  }
+  .heading{
+    font-size: 22px;
+  }
+  .subheading{
+    font-size: 15px;
+  }
+  .cta1{
+    padding: 0.3rem 1.7rem;
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+  .projectmain{
+    width: 80%;
+    padding: 0 1rem;
+    margin: 3rem auto;
+  }
+  .projectIcon{
+    height: 50px;
+    width: 50px;
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+    border: 3px solid white;
+  }
+  .projectContent{
+    transform: translateY(-1.8rem)
+  }
+  .projectSubTitle{
+    margin-bottom: 0.5rem;
+  }
+  .workheading{
+    font-size: 40px;
+  }
+  .homeWorkSection{
+    padding: 1rem;
+  }
+  .homeAboutSection{
+    height: 80vh;
+  }
+  .aboutText{
+    text-align: left;
+    width: 100%;
+  }
+  .homeSkillSection{
+    padding: 2rem 1rem;
+  }
+}

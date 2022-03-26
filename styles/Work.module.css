@@ -1,0 +1,260 @@
+.workHeading{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size:50px;
+    padding: 2rem;
+}
+
+.blogHeading{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size:50px;
+    padding: 1rem;
+}
+
+
+.workmain{
+  padding: 0 20vw;
+}
+
+.parentofparentcard{
+  display: flex;
+}
+
+.parentcard{
+    padding: 1rem;
+    width:fit-content;
+}
+
+.imageandsocials{
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    height: 35vmin;
+    width: 60vmin;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    margin: 0.5rem 0;
+}
+
+.arrows{
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.cardtitle{
+    display: flex;
+    justify-content: space-between;
+    width: 60vmin;
+}
+
+.cardbottom{
+    width: 60vmin;
+}
+
+.socialIcon{
+    border: 2px solid black;
+    padding: 0.4rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 1rem 0 1rem 1rem;
+    cursor: pointer;
+}
+
+.projtitle{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.projdescription{
+    font-size: 14px;
+}
+
+.carouselItem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .carousel {
+    padding: 2rem 0;
+    margin-top: 2rem;
+    overflow: hidden;
+  }
+  
+  .inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+  }  
+
+  .indicators {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  .indicators > button {
+    margin: 5px;
+  }
+
+  .indicators > button.active {
+    color: #ED2639;
+  }
+  .cta2{
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+  .experienceWrapper{
+    max-width: 75vw;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+
+  .experienceCardWrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-gap: 1rem;
+    place-items: center;
+    align-items: start;
+  } 
+  
+  .experienceCard{
+    margin: 0 1rem;
+    width: 320px;
+    max-width: 400px;
+    transition: 0.2s ease-in;
+  }
+
+  .experienceCard:hover{
+    transform: scale(0.98);
+  }
+
+  .experienceCardContent{
+    padding: 0 1rem;
+    position: relative;
+    top: -100px;
+    text-align: center;
+  }
+
+  .experienceCardContent h1{
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+
+  .experienceCardContent h2{
+    font-size: 20px;
+  }
+
+  .experienceCardContent h3{
+    font-size: 14px;
+    padding: 0 0.5rem;
+    position: relative;
+    top: 10px;
+  }
+
+  .experienceCardContent h4{
+    font-size: 14px;
+    position: relative;
+    top: 60px;
+  }
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+@media only screen and (max-width: 850px){
+  .parentofparentcard{
+    display: block;
+  }
+  .parentcard{
+      margin: 0 auto 2rem auto ;
+  }
+  .workmain{
+    padding: 0 10vw;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .workmain{
+    padding: 0;
+  }
+
+  .indicators {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .carouselItem {
+    padding: 1rem 2rem;
+  }
+
+    .workHeading{
+        font-size:35px;
+        padding: 2rem 1rem;
+    }
+
+    .blogHeading{
+        font-size:35px;
+        padding: 1rem;
+    }
+
+    .projtitle{
+        font-size: 20px;
+        margin-bottom: 0.5rem;
+    }
+    .cardtitle{
+        display: block;
+    }
+    .card{
+        height: 40.8333vmin;
+        width: 70vmin;
+    }
+    .cardbottom{
+      width: 70vmin;
+  }
+    .projdescription{
+        font-size: 12px;
+        width: 70vmin;
+    }
+    .socialIcon{
+        padding: 0.3rem;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .experienceWrapper{
+      max-width: 90vw;
+      margin: auto;
+    }
+
+    .experienceCard{
+      margin: 0 0.5rem;
+    }
+
+    .experienceCardContent h3{
+      padding: 0 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px){
+  .experienceCardWrapper{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  } 
+}

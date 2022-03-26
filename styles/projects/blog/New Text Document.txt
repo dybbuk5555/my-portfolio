@@ -1,0 +1,7 @@
+Midlands Wiskey Experiences
+
+"Midlands Wiskey Experiences" is a blog websites to explain about the cultural heritage and history of our proud ancient distilling tradition in the Midlands and invite to join us on one of our Whiskey Tours.
+
+Wordpress PHP MySQL Bootstrap
+
+https://midlandswhiskeyexperiences.ie/
