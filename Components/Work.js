@@ -2,8 +2,6 @@ import styles from '../styles/Work.module.css'
 import WorkProject from './WorkProject'
 import { projects } from '../Constants/projects'
 import { headings, userinfo } from '../Constants/userinfo'
-import Carousel, { CarouselItem } from "./Carousel";
-import Experiences from './Experiences';
 
 const Work = ({ currentTheme }) => {
 
@@ -21,9 +19,6 @@ const Work = ({ currentTheme }) => {
                     })
                 }
             </div>
-            {
-                userinfo.experience.visible ? <Experiences currentTheme={currentTheme} /> : null
-            }
         </div>
     )
 }

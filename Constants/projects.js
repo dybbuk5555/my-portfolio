@@ -13,8 +13,6 @@ import ECOMMERCE3 from '../styles/projects/eCommerce/3.png';
 import BLOG1 from '../styles/projects/blog/1.png';
 import BLOG2 from '../styles/projects/blog/2.png';
 import EVENT1 from '../styles/projects/event/1.png';
-import MONKEYLEAGUE1 from '../styles/projects/monkeyleague/1.png';
-import MONKEYLEAGUE2 from '../styles/projects/monkeyleague/2.png';
 import SOCIAL1 from '../styles/projects/social/1.png';
 
 // first 3 projects are visible on the homepage while all are visible on the work page.
@@ -70,12 +68,5 @@ export const projects = [
         projectLink: 'https://www.the-bancroft.com/',
         tech: ['Wordpress', 'PHP', 'MySQL'],
         photo: [RESTAURANT1, RESTAURANT2, RESTAURANT3],
-    },
-    {
-        name: 'MONKEY LEAGUE',
-        description: 'Monkey League is a Gaming website by the Monekey NFTs. Each Monkey NFT is generated with its own unique genetic composition, formulated from 32 traits, ranging from Common to Rare to Epic to Legendary.',
-        projectLink: 'https://www.monkeyleague.io/',
-        tech: ['ReactJS', 'Web3JS', 'Solidity'],
-        photo: [MONKEYLEAGUE1, MONKEYLEAGUE2],
     },
 ]

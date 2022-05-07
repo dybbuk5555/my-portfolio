@@ -1,7 +1,0 @@
-Monkey League
-
-Monkey League is a Gaming website by the Monekey NFTs. Each Monkey NFT is generated with its own unique genetic composition, formulated from 32 traits, ranging from Common to Rare to Epic to Legendary.
-
-https://www.monkeyleague.io/
-
-ReactJS  Web3JS  Solidity

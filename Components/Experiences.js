@@ -1,39 +1,45 @@
 import React from 'react'
-import { Box, Avatar } from "@chakra-ui/react"
-import styles from '../styles/Work.module.css'
-import { userinfo, headings } from '../Constants/userinfo'
+import styles from '../styles/Home.module.css'
+import { userinfo, headings, ctaTexts } from '../Constants/userinfo'
+import Link from 'next/link'
 
 const Experiences = ({ currentTheme }) => {
     return (
-        <div className={styles.experienceWrapper}>
-            <h1 className={styles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{headings.experience}</h1>
-            <div className={styles.experienceCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                {
-                    userinfo.experience.experienceList ?
-                    userinfo.experience.experienceList.map((exp, key) => {
-                            return (
-                                <div className={styles.experienceCard} key={key} data-aos="fade-up">
-                                    <Box borderWidth="1px" borderRadius="md" overflow="hidden">
-                                        <div style={{ background: currentTheme.secondary, height: '150px' }}></div>
-                                        <div className={styles.experienceCardContent}>
-                                            <h1>{exp.company}</h1>
-                                            <div className={styles.avatar}>
-                                                <Avatar size="xl" name={exp.company} src={"https://github.com/luckyman3559/my-portfolio/blob/main/styles/logos/logo1.png"}/>
-                                            </div>
-                                            <div style={{ position: 'relative', top: '20px' }}>
-                                                <h2>{exp.position}</h2>
-                                                <h3>{exp.description1}</h3>
-                                                <h3>{exp.description2}</h3>
-                                                <h3>{exp.description3}</h3>
-                                            </div>
-                                            <h4 style={{ color: currentTheme.subtext }}>{exp.time}</h4>
-                                        </div>
-                                    </Box>
-                                </div>
-                            )
-                        }) : null
-                }
+        <div className={styles.educationWrapper}>
+            <div className={styles.workheading} data-aos="fade-up">
+                {headings.experience}
             </div>
+
+            <div className={styles.timeline}>
+                <ul>
+                    {
+                        userinfo.experience.experienceList ?
+                            userinfo.experience.experienceList.map((exp, key) => {
+                                return (
+                                    <li data-aos="fade-up" key={key}>
+                                        <div className={styles.content}>
+                                            <h2 style={{ color: currentTheme.accent }}>{exp.company}</h2>
+                                            <p style={{ color: currentTheme.text }}>{exp.position}</p>
+                                            <p>
+                                                <div style={{ color: currentTheme.subtext }}>{exp.description1}</div>
+                                                <div style={{ color: currentTheme.subtext }}>{exp.description2}</div>
+                                                <div style={{ color: currentTheme.subtext }}>{exp.description3}</div>
+                                            </p>
+                                            
+                                        </div>
+                                        <div className={styles.time} style={{ border: `2px solid ${currentTheme.accent}`, color: currentTheme.accent }}>
+                                            <h4>{exp.time}</h4>
+                                        </div>
+                                    </li>
+                                )
+                            }) : null
+                    }
+                    <div style={{ clear: 'both' }}></div>
+                </ul>
+            </div>
+
+            <div style={{ textAlign: 'center', paddingBottom: '2rem' }}><Link href="/#about"><a className={styles.cta3} style={{ background: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.educationCTA} <span>&gt;</span></a></Link></div>
+
         </div>
     )
 }

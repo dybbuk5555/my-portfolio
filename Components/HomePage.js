@@ -6,7 +6,7 @@ import { projects } from '../Constants/projects'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { userinfo, ctaTexts, headings } from '../Constants/userinfo'
-import Education from './Education'
+import Experiences from './Experiences'
 
 const HomePage = ({ currentTheme }) => {
     return (
@@ -33,9 +33,7 @@ const HomePage = ({ currentTheme }) => {
                 <Skills currentTheme={currentTheme} />
             </div>
             <div>
-                {
-                    userinfo.education.visible ? <Education currentTheme={currentTheme} /> : null
-                }
+                <Experiences currentTheme={currentTheme} />
             </div>
             <div id="about" className={styles.homeAboutSection} style={{ backgroundColor: currentTheme.secondary }}>
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.about}</h1>

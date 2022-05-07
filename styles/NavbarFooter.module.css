@@ -76,6 +76,14 @@
   text-decoration: underline;
 }
 
+.footerlinks li{
+  text-transform: none;
+}
+
+.footerlinks li:hover{
+  text-decoration: none;
+}
+
 .listHeading{
   font-weight: bold;
   font-size: 16px !important;

@@ -5,14 +5,16 @@ import { faGithubAlt, faLinkedinIn, faMediumM, faFacebook, faTwitter, faInstagra
 export const userinfo = {
     logoText: "Akira Suzuki", //This text is visible on your navbar and footer like your logo.
     contact: {
-        email: '/dybbuk555@email.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
+        email: 'dybbuk555@gmail.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
+        skype: 'live:.cid.e112098476dcf1a1',
+        address: 'Japan, Tokyo, Minato City',
         phone: '', //Phone number is optional, if you dont want it, consider leaving it blank .
         countrycode: '' //It is advisable to add the country code incase you mention your contact number.
     },
     links: [
         //For aesthetics, it is advisable for you to mention upto 4 social media links only. Fill in the links.
         //more icons are imported above, use as you like them.
-        { type: 'github', link: 'https://github.com/GoldenStar71', icon: faGithubAlt },
+        { type: 'github', link: 'https://github.com/dark7892/', icon: faGithubAlt },
     ],
     greeting: {
         //this text goes on your landing page
@@ -45,29 +47,9 @@ export const userinfo = {
         content: "I am a Full-stack Expert and I have over 5 years of solid experience in React.js, Node.js, Express, MongoDB, Next.js, and Nest.js. I have been focusing on clean, elegant, and efficient coding and I am able to work on new and existing micro-sites, landing pages, templates, and provide guidance and troubleshooting support to clients. My experience also includes Blockchain Smart Contracts, NFT Marketplace, and Olympus DAO Fork. I look forward to being a part of a growing company as a Full-stack developer where I can utilize exceptional programming and interpersonal skills acquired to contribute to your company's success.",
         resume: "http://general.akiraportfolio.great-site.net/resume.pdf" //link your resume here. it can be drive link or any other link
     },
-    education: {
-        visible: true, //set this to false if you want to omit this section
-        educationList: [
-            {
-                time: 'Mar 2014 - Sep 2017', //timespan
-                title: 'Bachelor of Computer Science', //eg. BTech in Compuster Engineering
-                organization: 'Tokyo University of Science', //eg. VJTI, Mumbai
-                description: 'I have learnt a lot of basic concepts, knowledge, and experience in computer engineering and software development. This period is my first step as a software developer.' //eg. secured a cgpa of 9.25 in all sems appeared in so far
-            },    
-        ],
-    },
     experience: {
         visible: true, //set this to false if you want to omit this section
         experienceList: [
-            {
-                company: 'Ekoios Technology', //company name eg.Microsoft
-                companylogo: '../styles/logos/logo1.png', //companylogo
-                position: 'Blockchain Developer', //post you held eg.Senior SDE
-                time: 'March 2021 - November 2021', //timespan
-                description1: 'Worked on the ERC20 and ERC721 based smart contracts with Solidity.', //eg. spearheaded the graphics team in designing SASS product UIs
-                description2: 'Implemented Crypto payment for NFT using Web3.js and Solidity.',
-                description3: 'Worked with Olympus Dao Fork.'
-            },
             {
                 company: 'BEETSOFT',
                 companylogo: '../styles/logos/logo2.jpg',
@@ -75,7 +57,7 @@ export const userinfo = {
                 time: 'November 2018 - June 2021',
                 description1: 'Designed application architecture and optimized NoSQL queries.',
                 description2: 'Created reusable React components to the provided design.',
-                description3: 'Integrated bank payment to bet slots'
+                description3: 'Integrated bank payment to bet slots.'
             },
             {
                 company: 'Tacchi Studios',
