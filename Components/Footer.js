@@ -10,8 +10,9 @@ const Footer = ({ currentTheme }) => {
                 <ul>
                     <li className={styles.listHeading}>Pages</li>
                     <Link href='/'><a><li>Home</li></a></Link>
-                    <Link href='/work'><a><li>Work</li></a></Link>
+                    <Link href='/work'><a><li>Projects</li></a></Link>
                     <Link href='/#skills'><a><li>Skills</li></a></Link>
+                    <Link href='/#experiences'><a><li>Experiences</li></a></Link>
                     <Link href='/#about'><a><li>About</li></a></Link>
                 </ul>
                 <ul className={styles.footerlinks}>
@@ -29,7 +30,7 @@ const Footer = ({ currentTheme }) => {
                 </ul>
             </div>
             <hr style={{ height: '1px', backgroundColor: currentTheme.subtext, border: 'none', opacity: '0.5' }}></hr>
-            <h2 className={styles.footercontent}>Providing high quality at optimal cost</h2>
+            <h2 className={styles.footercontent}>Copyright © dybbuk.great-site.net 2022. All Rights Reserved.</h2>
         </div>
     )
 }

@@ -18,8 +18,8 @@ export const userinfo = {
     ],
     greeting: {
         //this text goes on your landing page
-        title: "Hello there, I am Akira.",
-        subtitle: "If you want to implement all features perfectly in developing your website, please contact me. Perhaps, you will receive a high-quality project on time at the optimal cost."
+        title: "Senior Full-stack Developer",
+        subtitle: "I am Akira Suzuki, a full-stack developer. I provide development, updating, and customizing of the various types of websites with the perfect front-end and back-end in which strong fashion and business style, gorgeousness, and delicacy are in harmony."
     },
     skills: [
         //this text goes on your home page in table format.
@@ -27,25 +27,31 @@ export const userinfo = {
         //For aesthetics, it is advisable for you to keep similar number of skills in each category
         {
             category: "Front-end", // eg.frontend, backend, devops etc
-            skillset: ["ReactJS", "VueJS", "HTML"] //eg. react, html, python etc.
+            skillset: ["React.js", "Next.js", "Vue.js"] //eg. react, html, python etc.
         },
         {
             category: "Back-end",
-            skillset: ["NodeJS", "Laravel", "Django"]
+            skillset: ["Node.js", "Laravel", "Typescript"]
         },
         {
             category: "Database",
             skillset: ["MongoDB", "MySQL", "PostgreSQL"]
         },
         {
-            category: "Blockchain",
-            skillset: ["Solidity", "Web3"]
+            category: "Other",
+            skillset: ["Github", "GitLab", "Jira"]
         },
     ],
     about: {
         //this text goes at the bottom of your home page.
-        content: "I am a Full-stack Expert and I have over 5 years of solid experience in React.js, Node.js, Express, MongoDB, Next.js, and Nest.js. I have been focusing on clean, elegant, and efficient coding and I am able to work on new and existing micro-sites, landing pages, templates, and provide guidance and troubleshooting support to clients. My experience also includes Blockchain Smart Contracts, NFT Marketplace, and Olympus DAO Fork. I look forward to being a part of a growing company as a Full-stack developer where I can utilize exceptional programming and interpersonal skills acquired to contribute to your company's success.",
-        resume: "http://general.akiraportfolio.great-site.net/resume.pdf" //link your resume here. it can be drive link or any other link
+        contents:[ "I have 5 years of solid experience in React.js and Node.js, and 3 years of experience in Next.js, Vue.js, and Laravel.",
+        "I have 4 advantages as follows:", 
+        "First, I can work in any time zone. Until now, I have been working in several different time zone.", 
+        "Second, I have a clear analysis and quick implementation abilities of the new systems or technologies.",
+        "Third, I have enough experience in using GitHub, GitLab, BitBucket, Jira, and Trello.", 
+        "Fourth, I have good communication and collaboration abilities for teamwork.", 
+        "It is my goal to understand the clients' needs clearly and to deliver a high-quality project on time at an optimal cost."],
+        resume: "http://dybbuk.great-site.net/Resume.pdf" //link your resume here. it can be drive link or any other link
     },
     experience: {
         visible: true, //set this to false if you want to omit this section
@@ -54,10 +60,10 @@ export const userinfo = {
                 company: 'BEETSOFT',
                 companylogo: '../styles/logos/logo2.jpg',
                 position: 'Senior Full-stack Developer',
-                time: 'November 2018 - June 2021',
-                description1: 'Designed application architecture and optimized NoSQL queries.',
-                description2: 'Created reusable React components to the provided design.',
-                description3: 'Integrated bank payment to bet slots.'
+                time: 'November 2018 - December 2021',
+                description1: 'Designed the application architecture on React.js, Redux, and Node.js.',
+                description2: 'Created reusable React components according to the provided design.',
+                description3: 'Optimized a number of large NoSQL reporting queries.'
             },
             {
                 company: 'Tacchi Studios',
@@ -66,7 +72,7 @@ export const userinfo = {
                 time: 'Octover 2017 - September 2018',
                 description1: 'Maintained and improved the client portal React Application.  ',
                 description2: 'Implemented multiresolution React icon library using code generation.',
-                description3: 'made huge enterprise app for clients.'
+                description3: 'Contributed as part of a team that made a huge, enterprise app for clients.'
             },
         ],
     },
@@ -74,8 +80,7 @@ export const userinfo = {
 
 export const headings = {
     //you can customise all the headings here.
-    workHomePage: 'Work',
-    workMainPage: 'Projects',
+    workHomePage: 'Projects',
     skills: 'Skills',
     about: 'About Me',
     education: 'Education',
